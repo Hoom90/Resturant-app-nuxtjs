@@ -1,12 +1,22 @@
 <script setup>
-
+import cart from "@/assets/svg/cart.svg"
 const state = reactive({
   menu:[
     {title:"Home",url:"/"},
     {title:"Product",url:"/product/"},
     {title:"About",url:"/about"},
     {title:"Contact",url:"/contact"}
-  ]
+  ],
+  cartStatus:false,
+})
+
+onMounted(()=>{
+  if(localStorage.getItem('basket') ?? false){
+    state.cartStatus = true
+  }
+  else{
+    state.cartStatus = false
+  }
 })
 
 </script>
@@ -20,9 +30,10 @@ const state = reactive({
     </div>
     <div class="">
       <div class="hidden md:flex justify-center items-center gap-3">
-        <button type="button" class="px-3 border-b-2 border-transparent transition-all hover:border-black">Images</button>
-        <NuxtLink to="/basket">
-          <button type="button" class="bg-black text-white p-3 rounded transition-all hover:bg-[#1f1f1f]">Basket</button>
+        <button type="button" class="px-3 border-b-2 border-transparent transition-all hover:border-black">Gallary</button>
+        <NuxtLink to="/basket" class="relative">
+          <button class="text-white p-1 pr-3 rounded transition-all bg-orange-500 flex items-center justify-center hover:bg-orange-600"><img :src="cart"><span> | Basket</span></button>
+          <div v-if="state.cartStatus" class="bg-blue-500 w-[10px] h-[10px] rounded-full absolute -top-1 -right-1"></div>
         </NuxtLink>
       </div>
       <!-- <div class="md:hidden">
