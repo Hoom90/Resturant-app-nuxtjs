@@ -1,5 +1,6 @@
 <script setup>
 import cart from "@/assets/svg/cart.svg"
+const route = useRoute()
 const state = reactive({
   menu:[
     {title:"Home",url:"/"},
@@ -13,6 +14,21 @@ const state = reactive({
 onMounted(()=>{
   if(localStorage.getItem('basket') ?? false){
     state.cartStatus = true
+  }
+  else{
+    state.cartStatus = false
+  }
+})
+
+watch(()=>route.path,()=>{
+  if(localStorage.getItem('basket') ?? false){
+    let local = JSON.parse(localStorage.getItem('basket'))
+    if(local.length != 0){
+      state.cartStatus = true
+    }
+    else{
+      state.cartStatus = false
+    }
   }
   else{
     state.cartStatus = false

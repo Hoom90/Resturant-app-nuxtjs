@@ -1,5 +1,7 @@
 <script setup>
 import pageLayout from '~/layouts/pageLayout.vue';
+import footerComp from "../components/footer.vue"
+
 import hero from '@/assets/svg/hero.svg';
 import side1 from '@/assets/svg/side1.svg';
 import side2 from '@/assets/svg/side2.svg';
@@ -248,7 +250,7 @@ const slides = ref([
     </div>
   </section>
 
-
+  <footerComp/>
 </template>
 
 <style scoped>
