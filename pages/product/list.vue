@@ -16,7 +16,6 @@ import product12 from '@/assets/image/image12.png'
 import product13 from '@/assets/image/image13.png'
 import product14 from '@/assets/image/image14.png'
 import product15 from '@/assets/image/image15.png'
-
 const state = reactive({
   data: [
     {
@@ -26,7 +25,8 @@ const state = reactive({
       image: product1,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -35,7 +35,8 @@ const state = reactive({
       image: product2,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -44,7 +45,8 @@ const state = reactive({
       image: product3,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -53,7 +55,8 @@ const state = reactive({
       image: product4,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -62,7 +65,8 @@ const state = reactive({
       image: product5,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -71,7 +75,8 @@ const state = reactive({
       image: product6,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -80,7 +85,8 @@ const state = reactive({
       image: product7,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -89,7 +95,8 @@ const state = reactive({
       image: product8,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -98,7 +105,8 @@ const state = reactive({
       image: product9,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -107,7 +115,8 @@ const state = reactive({
       image: product10,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -116,7 +125,8 @@ const state = reactive({
       image: product11,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -125,7 +135,8 @@ const state = reactive({
       image: product12,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -134,7 +145,8 @@ const state = reactive({
       image: product13,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -143,7 +155,8 @@ const state = reactive({
       image: product14,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
     {
       category: "men's clothing",
@@ -152,10 +165,12 @@ const state = reactive({
       image: product15,
       price: 109.95,
       rating: { rate: 3.9, count: 120 },
-      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
+      title: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      counter:0,
     },
   ],
   basket : [],
+  counter: [],
 })
 
 // await useFetch('https://fakestoreapi.com/products')
@@ -164,8 +179,29 @@ const state = reactive({
 //   state.data = res.data.value
 // })
 
+onMounted(()=>{
+  getData()
+})
+
+const getData = () => {
+  state.basket = JSON.parse(localStorage.getItem('basket')) ?? []
+  state.basket.forEach(item =>{
+    const res = state.data.find(t => t.id == item.id)
+    res.counter = item.counter
+  })
+}
+
 const addToBasket = (id) =>{
-  state.basket.push(id)
+  const res = state.basket.find(t=>t.id == id)
+  if(res){
+    let resData = state.data.find(t=>t.id == id)
+    resData.counter++
+    res.counter++
+  }else{
+    let res = state.data.find(t=>t.id == id)
+    res.counter++
+    state.basket.push({id,counter:1})
+  }
   localStorage.setItem('basket',JSON.stringify(state.basket))
 }
 
@@ -178,10 +214,13 @@ const addToBasket = (id) =>{
       <p class="text-[2rem] max-w-[500px] mx-auto">Best Online Food provider in History Ever seen!!</p>
     </div>
     <div class="flex flex-wrap justify-center gap-5">
-      <button v-for="item in state.data" :key="item.id" @click="addToBasket(item.id)" class=" w-1/2 md:w-1/3 lg:w-[300px] p-5 px-10 shadow-md rounded transition-all ease-in-out hover:scale-[1.1]">
+      <button v-for="item in state.data" :key="item.id" @click="addToBasket(item.id)" class="relative w-1/2 md:w-1/3 lg:w-[300px] p-5 px-10 shadow-md rounded transition-all ease-in-out hover:scale-[1.1]">
         <div class="">
           <img :src="item.image" class="mx-auto" :alt="`product${item.id}`">
           {{item.title}}
+        </div>
+        <div v-if="item.counter > 0" class="absolute -top-2 -right-2 bg-orange-500 rounded-full w-[30px] h-[30px] flex items-center justify-center text-white">
+          {{item.counter}}
         </div>
       </button>
     </div>
