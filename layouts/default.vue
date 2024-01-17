@@ -8,10 +8,10 @@ onMounted(()=>{
 </script>
 <template>
   <div class="max-w-[1440px] mx-auto">
+    <headerComp/>
     <div class="min-h-[800px]">
-      <headerComp/>
       <NuxtPage  />
-      <footerComp/>
     </div>
+    <footerComp/>
   </div>
 </template>
